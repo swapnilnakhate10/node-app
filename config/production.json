@@ -2,7 +2,7 @@
     "serverPort" : 80,
     "mongoDb" : {
         "port" : 27017,
-        "dbname" : "MyNodeApp"
+        "dbname" : "TheBakersTreat"
     },
     "logger" : {
         "type" : "console",
