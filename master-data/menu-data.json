@@ -1,0 +1,38 @@
+[
+    {
+      "categoryId": 1,
+      "category": "Coffee and Beverages",
+      "menus": [
+        {
+          "menuId": 1,
+          "menu": "Cold Coffee",
+          "quantity": 1,
+          "price": 40
+        },
+        {
+          "menuId": 2,
+          "menu": "Hot Coffee",
+          "quantity": 1,
+          "price": 30
+        }
+      ]
+    },
+    {
+      "categoryId" : 2,
+      "category" : "Sandwich",
+      "menus": [
+        {
+          "menuId" : 3,
+          "menu": "Cheeze Sandwich",
+          "quantity": 1,
+          "price": 40
+        },
+        {
+          "menuId" : 4,
+          "menu" : "Grilled Sandwich",
+          "quantity" : 1,
+          "price" : 30
+        }
+      ]
+    }
+  ]

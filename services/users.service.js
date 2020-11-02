@@ -31,7 +31,7 @@ async function createUser(userDetails, callback) {
 
 async function loginUser(credentials, callback) {
   logger.debug('Initiated login User');
-  let findUserQuery = { username : credentials.username };
+  let findUserQuery = { email : credentials.email };
   let userDetails = await usersDao.findOne(findUserQuery);
   if(userDetails && userDetails._id) {
      let isPasswordMatched = comparePassword(credentials.password, userDetails.password);
@@ -45,13 +45,13 @@ async function loginUser(credentials, callback) {
         };
         callback(null, response);
      } else {
-        logger.error('User login Failed : '+credentials.username);
+        logger.error('User login Failed : '+credentials.email);
         let error = new Error();
         error.message = "Invalid Credentials";
         callback(error, null);
      }
   } else {
-    logger.error('User login Failed : '+credentials.username);
+    logger.error('User login Failed : '+credentials.email);
     let error = new Error();
     error.message = "Invalid Credentials";
     callback(error, null);

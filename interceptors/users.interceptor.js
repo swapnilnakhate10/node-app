@@ -5,8 +5,8 @@ module.exports = {
 };
 
 function createUser(req, res, next) {
-    let username = req.body.username;
-    if(username && username !== '') {
+    let email = req.body.email;
+    if(email && email !== '') {
         next();
     } else {
         res.send({"message" : "Required field/s missing."});
@@ -14,9 +14,9 @@ function createUser(req, res, next) {
 }
 
 function loginUser(req, res, next) {
-    let username = req.body.username;
+    let email = req.body.email;
     let password = req.body.password;
-    if(username && username !== '' && password && password !== '') {
+    if(email && email !== '' && password && password !== '') {
         next();
     } else {
         res.send({"message" : "Required field/s missing."});

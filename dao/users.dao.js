@@ -6,7 +6,8 @@ const logger = log4js.getLogger("Users Dao");
 module.exports = {
     insertOne : insertOne,
     findOne : findOne,
-    find : find
+    find : find,
+    findOneAndUpdate : findOneAndUpdate
 };
 
 async function insertOne(userDetails) {
@@ -19,6 +20,14 @@ async function insertOne(userDetails) {
 
 async function findOne(query) {
     let userDetails = await UserModel.findOne(query).catch((err) => {
+        return err;
+    });
+    return userDetails;
+}
+
+async function findOneAndUpdate(query, updateData) {
+    let options = { new : true };
+    let userDetails = await UserModel.findOne(query, updateData, options).catch((err) => {
         return err;
     });
     return userDetails;
