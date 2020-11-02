@@ -20,10 +20,22 @@ let jwtCheck = jwt({
     algorithms: [ 'HS256' ]
 });
 
+function checkAdmin(req, res, next) {
+    if(req.user) {
+        if(req.user.isAdmin) {
+            next();
+        } else {
+            res.status(401).send({ message : "Unauthorized" });
+        }
+    } else {
+        res.status(401).send({ message : "Unauthorized" });
+    }
+}
+
 router.post('/', ordersController.addUpdateOrder);
 
-router.get('/:tableId',  ordersController.getOrdersOfTable);
+router.get('/:tableId', ordersController.getOrdersOfTable);
 
-router.put('/:tableId', ordersController.submitTableBill);
+router.put('/:tableId', jwtCheck, checkAdmin, ordersController.submitTableBill);
 
 module.exports = router;
