@@ -19,6 +19,10 @@ const userSchema = new Schema({
     status : {
         type : String,
         default : "Available"
+    },
+    paymentMode : {
+        type : String,
+        default : "NA"
     }
 });
 

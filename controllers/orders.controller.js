@@ -6,7 +6,8 @@ const logger = log4js.getLogger("Orders Controller");
 
 module.exports = {
     addUpdateOrder : addUpdateOrder,
-    getOrdersOfTable : getOrdersOfTable
+    getOrdersOfTable : getOrdersOfTable,
+    submitTableBill : submitTableBill
 };
 
 function addUpdateOrder(req, res) {
@@ -32,6 +33,21 @@ function getOrdersOfTable(req, res) {
       res.status(500).send(err);
     } else {
       logger.debug("Success for tables Orders : "+tableNumber);
+      res.status(200).send(result);
+    }
+  });
+}
+
+function submitTableBill(req, res) {
+  logger.debug("Inside List Orders");
+  let tableNumber = req.params.tableId;
+  let paymentMode = req.body.paymentMode;
+  ordersService.submitTableBill(tableNumber, paymentMode, (err, result) => {
+    if(err) {
+      logger.error("Error Submit bill for Table : "+err);
+      res.status(500).send(err);
+    } else {
+      logger.debug("Success Submit bill for Table : "+tableNumber);
       res.status(200).send(result);
     }
   });

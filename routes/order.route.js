@@ -24,4 +24,6 @@ router.post('/', ordersController.addUpdateOrder);
 
 router.get('/:tableId',  ordersController.getOrdersOfTable);
 
+router.put('/:tableId', ordersController.submitTableBill);
+
 module.exports = router;

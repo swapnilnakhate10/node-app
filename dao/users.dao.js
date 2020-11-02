@@ -27,7 +27,7 @@ async function findOne(query) {
 
 async function findOneAndUpdate(query, updateData) {
     let options = { new : true };
-    let userDetails = await UserModel.findOne(query, updateData, options).catch((err) => {
+    let userDetails = await UserModel.findOneAndUpdate(query, updateData, options).catch((err) => {
         return err;
     });
     return userDetails;

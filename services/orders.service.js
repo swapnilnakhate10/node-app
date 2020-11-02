@@ -7,7 +7,8 @@ logger.debug("Order Service Initiated");
 
 module.exports = {
     addUpdateOrder : addUpdateOrder,
-    getOrdersOfTable : getOrdersOfTable
+    getOrdersOfTable : getOrdersOfTable,
+    submitTableBill : submitTableBill
 };
 
 async function addUpdateOrder(orderDetails, callback) {
@@ -25,7 +26,7 @@ async function addUpdateOrder(orderDetails, callback) {
         } else {
             logger.error("Failed to update order : "+tableNumber);
             callback({ message : "Failed to updated Order." }, null);
-        }            
+        }
     } else {
         let createdOrders = await ordersDao.insertOne(orderDetails);
         if(createdOrders) {
@@ -48,5 +49,27 @@ async function getOrdersOfTable(tableNumber, callback) {
     } else {
         logger.error("Error getting Orders for Table "+tableNumber);
         callback(updatedOrders, null);
+    }
+}
+
+async function submitTableBill(tableNumber, paymentMode, callback) {
+    logger.debug("get Orders Of Table Initiated");
+    let findTableQuery = { tableNumber : tableNumber, status : { $ne: "PAID" } };
+    let tableOrders = await ordersDao.findOne(findTableQuery);
+    if(tableOrders && tableOrders._id) {
+        logger.debug("get Orders Of Table success : "+tableNumber);
+        let tableQuery = { _id : tableOrders._id }
+        let updatedData = { $set : { status : "PAID" , paymentMode : paymentMode} };
+        let updatedOrders = await ordersDao.findOneAndUpdate(tableQuery, updatedData);
+        if(updatedOrders) {
+            logger.debug("Bill paid for "+tableNumber);
+            callback(null, { message : "Order updated successfully" });
+        } else {
+            logger.error("Failed to update order : "+tableNumber);
+            callback({ message : "Failed to updated Order." }, null);
+        }
+    } else {
+        logger.error("Error getting Orders for Table "+tableNumber);
+        callback(tableOrders, null);
     }
 }
