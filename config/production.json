@@ -2,7 +2,8 @@
     "serverPort" : 80,
     "mongoDb" : {
         "port" : 27017,
-        "dbname" : "TheBakersTreat"
+        "dbname" : "TheBakersTreat",
+        "connectionString" : "mongodb://localhost:27017/TheBakersTreat"
     },
     "logger" : {
         "type" : "console",

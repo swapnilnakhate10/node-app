@@ -42,7 +42,7 @@ app.use((req, res, next) => {
 
 app.use('/', indexRouter);
 
-let connectionString = 'mongodb://localhost:'+config.get('mongoDb.port')+'/'+ config.get('mongoDb.dbname');
+let connectionString = config.get('mongoDb.connectionString');
 
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
@@ -52,7 +52,7 @@ mongoose.connect(connectionString, {
 let dbConnect = mongoose.connection;
 
 dbConnect.on('connected', () => {
-  logger.debug("Database Connected.");
+  logger.debug("Database Connected to "+connectionString);
 });
 //Bind connection to error event (to get notification of connection errors)
 dbConnect.on('error', (error) => {
