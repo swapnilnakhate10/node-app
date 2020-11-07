@@ -1,38 +1,1022 @@
 [
-    {
-      "categoryId": 1,
-      "category": "Coffee and Beverages",
-      "menus": [
-        {
-          "menuId": 1,
-          "menu": "Cold Coffee",
-          "quantity": 1,
-          "price": 40
-        },
-        {
-          "menuId": 2,
-          "menu": "Hot Coffee",
-          "quantity": 1,
-          "price": 30
-        }
-      ]
-    },
-    {
-      "categoryId" : 2,
-      "category" : "Sandwich",
-      "menus": [
-        {
-          "menuId" : 3,
-          "menu": "Cheeze Sandwich",
-          "quantity": 1,
-          "price": 40
-        },
-        {
-          "menuId" : 4,
-          "menu" : "Grilled Sandwich",
-          "quantity" : 1,
-          "price" : 30
-        }
-      ]
-    }
-  ]
+  {
+    "categoryId": "50001",
+    "category": "Hot Beverages",
+    "menus": [
+      {
+        "menuId": "1001",
+        "menu": "Black coffee",
+        "price": 20,
+        "quantity": 1
+      },
+      {
+        "menuId": "1002",
+        "menu": "Hot Coffee",
+        "price": 20,
+        "quantity": 1
+      },
+      {
+        "menuId": "1003",
+        "menu": "Hot Chocolate",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1004",
+        "menu": "Cappuccino",
+        "price": 40,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50002",
+    "category": "Cold Beverages",
+    "menus": [
+      {
+        "menuId": "1005",
+        "menu": "Cold  Coffee",
+        "price": 30,
+        "quantity": 1
+      },
+      {
+        "menuId": "1006",
+        "menu": "Cold Chocolate",
+        "price": 30,
+        "quantity": 1
+      },
+      {
+        "menuId": "1007",
+        "menu": "Crushed Cold Coffee",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1008",
+        "menu": "Creamy Cold Coffee",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1009",
+        "menu": "Creamy Cold Chocolate ",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1010",
+        "menu": "Cold Coffee With ( Vanilla / Choco / Butterscotch  )",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1011",
+        "menu": "Creamy Bornvita",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1012",
+        "menu": "Cold Chocolate With ( Vanilla / Choco / Butterscotch  )",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1013",
+        "menu": "Muffins Cold Coffee",
+        "price": 60,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50003",
+    "category": "Shakes",
+    "menus": [
+      {
+        "menuId": "1014",
+        "menu": "Kit-Kat",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1015",
+        "menu": "Mango ",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1016",
+        "menu": "Strawberry",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1017",
+        "menu": "Black Current ",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1018",
+        "menu": "Blueberry",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1019",
+        "menu": "Very Berry",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1020",
+        "menu": "Oreo Blast",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1021",
+        "menu": "Pineapple",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1022",
+        "menu": "Rose",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1023",
+        "menu": "Green Apple",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1024",
+        "menu": "Butterscotch",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1025",
+        "menu": "Sitafal",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1026",
+        "menu": "Black Forrest ",
+        "price": 90,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50004",
+    "category": "Frappes",
+    "menus": [
+      {
+        "menuId": "1027",
+        "menu": "Crunchy Vanilla",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1028",
+        "menu": "Crunchy Chocolate",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1029",
+        "menu": "Nutty Vanilla",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1030",
+        "menu": "Nutty Chocolate",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1031",
+        "menu": "Oreo Monster",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "menuId": "1032",
+        "menu": "Chocolate Fudge",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "menuId": "1033",
+        "menu": "SP. Frappes",
+        "price": 140,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50005",
+    "category": "Maggie",
+    "menus": [
+      {
+        "menuId": "1035",
+        "menu": "Plain",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1036",
+        "menu": "Masala",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1037",
+        "menu": "Mutter Masala",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1038",
+        "menu": "Cheesy Masala",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1039",
+        "menu": "Mexican",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1040",
+        "menu": "Peri-Peri Maggie",
+        "price": 70,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50006",
+    "category": "Pasta",
+    "menus": [
+      {
+        "menuId": "1041",
+        "menu": "Penne",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1042",
+        "menu": "Macroni",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1043",
+        "menu": "Fusli",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1044",
+        "menu": "Bar-B",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1045",
+        "menu": "Sp. Pasta",
+        "price": 90,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50007",
+    "category": "Fries",
+    "menus": [
+      {
+        "menuId": "1046",
+        "menu": "French Fries (Plain)",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1047",
+        "menu": "French Fries (Masala)",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1048",
+        "menu": "Potato Yummies (15 Pcs.)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1049",
+        "menu": "Alloo Tikku (4 Pcs.)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1050",
+        "menu": "Peri-Peri Fries",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1051",
+        "menu": "Cheese Nachos",
+        "price": 110,
+        "quantity": 1
+      },
+      {
+        "menuId": "1052",
+        "menu": "Pizza Fries",
+        "price": 120,
+        "quantity": 1
+      },
+      {
+        "menuId": "1053",
+        "menu": "Cheesy Mayo Fries ",
+        "price": 120,
+        "quantity": 1
+      },
+      {
+        "menuId": "1054",
+        "menu": "Nuggets",
+        "price": 80,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50008",
+    "category": "Burgers",
+    "menus": [
+      {
+        "menuId": "1055",
+        "menu": "Veggie",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1056",
+        "menu": "Cheesy ",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1057",
+        "menu": "Paneer",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1058",
+        "menu": "Cheesy - Paneer",
+        "price": 90,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50009",
+    "category": "Mastani",
+    "menus": [
+      {
+        "menuId": "1059",
+        "menu": "Mango",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1060",
+        "menu": "Sitafal",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "menuId": "1061",
+        "menu": "Jamun",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "menuId": "1062",
+        "menu": "Black Current",
+        "price": 100,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50010",
+    "category": "Shots",
+    "menus": [
+      {
+        "menuId": "1063",
+        "menu": "Jamun",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1064",
+        "menu": "Chocolate",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1065",
+        "menu": "Mango",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1066",
+        "menu": "Blueberry",
+        "price": 40,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50011",
+    "category": "Sandwich",
+    "menus": [
+      {
+        "menuId": "1067",
+        "menu": "Vegetable",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1068",
+        "menu": "Veg. Cheese",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1069",
+        "menu": "Cheese Mayonnaise",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1070",
+        "menu": "Masala",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1071",
+        "menu": "Cheese Masala",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1072",
+        "menu": "Cheese Paneer Masala",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1073",
+        "menu": "Cheese Corn",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1074",
+        "menu": "Cheese Butter",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1075",
+        "menu": "Cheese Spicy ",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1076",
+        "menu": "Mashroom Masala",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1077",
+        "menu": "Choco Tost",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1078",
+        "menu": "Peri-Peri Sandwich",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1079",
+        "menu": "Cheese Tikka",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1080",
+        "menu": "Paneer Tikka",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1081",
+        "menu": "Tanddori Paneer",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1082",
+        "menu": "Veg.Club",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1083",
+        "menu": "Cheese Club",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1084",
+        "menu": "Cheese Paneer Club",
+        "price": 90,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50012",
+    "category": "Toast",
+    "menus": [
+      {
+        "menuId": "1085",
+        "menu": "Cheese Chilli Toast",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1086",
+        "menu": "Cheese Chilli Corn  Toast",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1087",
+        "menu": "Garlic Bread",
+        "price": 90,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50013",
+    "category": "Mock-tails",
+    "menus": [
+      {
+        "menuId": "1088",
+        "menu": "Cool Blue",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1089",
+        "menu": "Orange",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1090",
+        "menu": "Green Apple",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1091",
+        "menu": "Jeera Lemon",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1092",
+        "menu": "Kiwi Cooler",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1093",
+        "menu": "Fresh Lemon Soda",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1094",
+        "menu": "Virgin Mojto (Blue / Kiwi)",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1095",
+        "menu": "Rose",
+        "price": 50,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50014",
+    "category": "Sundaes To Savour",
+    "menus": [
+      {
+        "menuId": "1096",
+        "menu": "Dark Passion (Large)",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1097",
+        "menu": "Moco-Choco (Large)",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "menuId": "1098",
+        "menu": "Fruity Blizz (Large)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1099",
+        "menu": "Red Velvet (Large)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1100",
+        "menu": "Death By Chocolate (Large)",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "menuId": "1101",
+        "menu": "Devil Is Own (Large)",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "menuId": "1102",
+        "menu": "Sizzling Brownie (Choco & Large)",
+        "price": 120,
+        "quantity": 1
+      },
+      {
+        "menuId": "1103",
+        "menu": "Sizzling Brownie (Vanilla & Large)",
+        "price": 120,
+        "quantity": 1
+      },
+      {
+        "menuId": "1104",
+        "menu": "Dark Passion (Small)",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1105",
+        "menu": "Moco-Choco (Small)",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1106",
+        "menu": "Chocolate Suspense (Small)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1107",
+        "menu": "Fruity Blizz (Small)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1108",
+        "menu": "Red Velvet (Small)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1109",
+        "menu": "Death By Chocolate (Small)",
+        "price": 70,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50015",
+    "category": "Chocolade B & M",
+    "menus": [
+      {
+        "menuId": "1110",
+        "menu": "Cad-B (Large)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1111",
+        "menu": "Cad-M (Large)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1112",
+        "menu": "Mix-Cad (Large)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1113",
+        "menu": "Coffee Cad B /M (Large)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1114",
+        "menu": "Choco-nut  B/M (Large)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1115",
+        "menu": "Oreo Cad B/M (Large)",
+        "price": 90,
+        "quantity": 1
+      },
+      {
+        "menuId": "1116",
+        "menu": "Dry Fruit Cad B (Large)",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "menuId": "1117",
+        "menu": "Cad-B (Small)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1118",
+        "menu": "Cad-M (Small)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1119",
+        "menu": "Mix-Cad (Small)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1120",
+        "menu": "Coffee Cad B /M (Small)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1121",
+        "menu": "Choco-nut  B/M (Small)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1122",
+        "menu": "Oreo Cad B/M (Small)",
+        "price": 70,
+        "quantity": 1
+      },
+      {
+        "menuId": "1123",
+        "menu": "Dry Fruit Cad B (Small)",
+        "price": 80,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "categoryId": "50016",
+    "category": "Pizza",
+    "menus": [
+      {
+        "menuId": "1124",
+        "menu": "Cheese Pizza (Large)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1125",
+        "menu": "Italian Treat (Large)",
+        "price": 190,
+        "quantity": 1
+      },
+      {
+        "menuId": "1126",
+        "menu": "Veggie Paradise (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1127",
+        "menu": "Veg. Extra Vaganza (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1128",
+        "menu": "Veg. Exotica (Large)",
+        "price": 220,
+        "quantity": 1
+      },
+      {
+        "menuId": "1129",
+        "menu": "Tandoori Paneer (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1130",
+        "menu": "Deluxe Veggie (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1131",
+        "menu": "Veg. Delight (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1132",
+        "menu": "Thin Crust (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1133",
+        "menu": "Cheesy Burst (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1134",
+        "menu": "Corn Pizza (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1135",
+        "menu": "Lover’s Supreme (Large)",
+        "price": 220,
+        "quantity": 1
+      },
+      {
+        "menuId": "1136",
+        "menu": "Margarita (Large)",
+        "price": 220,
+        "quantity": 1
+      },
+      {
+        "menuId": "1137",
+        "menu": "Special (Large)",
+        "price": 240,
+        "quantity": 1
+      },
+      {
+        "menuId": "1138",
+        "menu": "Nachos Deluxe (Large)",
+        "price": 220,
+        "quantity": 1
+      },
+      {
+        "menuId": "1139",
+        "menu": "Chocolate Piazza (Large)",
+        "price": 200,
+        "quantity": 1
+      },
+      {
+        "menuId": "1140",
+        "menu": "Cheese Pizza (Small)",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "menuId": "1141",
+        "menu": "Italian Treat (Small)",
+        "price": 120,
+        "quantity": 1
+      },
+      {
+        "menuId": "1142",
+        "menu": "Veggie Paradise (Small)",
+        "price": 140,
+        "quantity": 1
+      },
+      {
+        "menuId": "1143",
+        "menu": "Veg. Extra Vaganza (Small)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1144",
+        "menu": "Veg. Exotica (Small)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1145",
+        "menu": "Tandoori Paneer (Small)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1146",
+        "menu": "Deluxe Veggie (Small)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1147",
+        "menu": "Veg. Delight (Small)",
+        "price": 140,
+        "quantity": 1
+      },
+      {
+        "menuId": "1148",
+        "menu": "Thin Crust (Small)",
+        "price": 140,
+        "quantity": 1
+      },
+      {
+        "menuId": "1149",
+        "menu": "Cheesy Burst (Small)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1150",
+        "menu": "Corn Pizza (Small)",
+        "price": 140,
+        "quantity": 1
+      },
+      {
+        "menuId": "1151",
+        "menu": "Lover’s Supreme (Small)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1152",
+        "menu": "Margarita (Small)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1153",
+        "menu": "Special (Small)",
+        "price": 170,
+        "quantity": 1
+      },
+      {
+        "menuId": "1154",
+        "menu": "Nachos Deluxe (Small)",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "menuId": "1155",
+        "menu": "Chocolate Piazza (Small)",
+        "price": 120,
+        "quantity": 1
+      }
+    ]
+  }
+]
