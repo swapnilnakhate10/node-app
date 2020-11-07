@@ -629,7 +629,13 @@
       },
       {
         "menuId": "1094",
-        "menu": "Virgin Mojto (Blue / Kiwi)",
+        "menu": "Virgin Mojto (Blue)",
+        "price": 60,
+        "quantity": 1
+      },
+      {
+        "menuId": "1116",
+        "menu": "Virgin Mojto (Kiwi)",
         "price": 60,
         "quantity": 1
       },
