@@ -17,8 +17,11 @@ function createToken(userDetails) {
         iss : issuer_key,
         alg : 'HS256',
         jti : userDetails._id,
+        isAdmin : userDetails.isAdmin,
         mobileNumber : userDetails.mobileNumber
-      }, secrete_key, { expiresIn: "1h" });
+      }, secrete_key, {
+        expiresIn: "1d"
+      });
     return token; 
 }
 
