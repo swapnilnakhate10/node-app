@@ -1024,5 +1024,59 @@
         "quantity": 1
       }
     ]
+  },
+  {
+    "categoryId": "50017",
+    "category": "Other",
+    "menus": [
+      {
+        "menuId": "1156",
+        "menu": "Cake Pastries (40)",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1157",
+        "menu": "Cake Pastries (50)",
+        "price": 50,
+        "quantity": 1
+      },
+      {
+        "menuId": "1158",
+        "menu": "Cold Drink (20)",
+        "price": 20,
+        "quantity": 1
+      },
+      {
+        "menuId": "1159",
+        "menu": "Cold Drink (30)",
+        "price": 30,
+        "quantity": 1
+      },
+      {
+        "menuId": "1160",
+        "menu": "Cold Drink (40)",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "menuId": "1161",
+        "menu": "Veg Puff (20)",
+        "price": 20,
+        "quantity": 1
+      },
+      {
+        "menuId": "1162",
+        "menu": "Water Bottle (Small)",
+        "price": 10,
+        "quantity": 1
+      },
+      {
+        "menuId": "1163",
+        "menu": "Water Bottle (Large)",
+        "price": 20,
+        "quantity": 1
+      }
+    ]
   }
 ]
