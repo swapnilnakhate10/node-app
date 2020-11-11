@@ -7,7 +7,8 @@ const logger = log4js.getLogger("Orders Controller");
 module.exports = {
     addUpdateOrder : addUpdateOrder,
     getOrdersOfTable : getOrdersOfTable,
-    submitTableBill : submitTableBill
+    submitTableBill : submitTableBill,
+    getTodaysOrders : getTodaysOrders
 };
 
 function addUpdateOrder(req, res) {
@@ -48,6 +49,19 @@ function submitTableBill(req, res) {
       res.status(500).send(err);
     } else {
       logger.debug("Success Submit bill for Table : "+tableNumber);
+      res.status(200).send(result);
+    }
+  });
+}
+
+function getTodaysOrders(req, res) {
+  logger.debug("Inside getTodaysOrders");
+  ordersService.getTodaysOrders((err, result) => {
+    if(err) {
+      logger.error("Get getTodaysOrders : "+err);
+      res.status(500).send(err);
+    } else {
+      logger.debug("Success getTodaysOrders ");
       res.status(200).send(result);
     }
   });

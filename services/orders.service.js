@@ -8,7 +8,8 @@ logger.debug("Order Service Initiated");
 module.exports = {
     addUpdateOrder : addUpdateOrder,
     getOrdersOfTable : getOrdersOfTable,
-    submitTableBill : submitTableBill
+    submitTableBill : submitTableBill,
+    getTodaysOrders : getTodaysOrders
 };
 
 async function addUpdateOrder(orderDetails, callback) {
@@ -73,3 +74,20 @@ async function submitTableBill(tableNumber, paymentMode, callback) {
         callback(tableOrders, null);
     }
 }
+
+async function getTodaysOrders(callback) {
+    let currentDate = new Date();
+    let startDate = currentDate.toLocaleDateString();
+    let todaySaleQuery = { "updatedAt" : {$gte: startDate } };
+    logger.debug("todaySaleQuery : ");
+    logger.debug(todaySaleQuery);
+    let todaySale = await ordersDao.find(todaySaleQuery);
+    if(todaySale && todaySale.length > 0) {
+        logger.debug("todaySale : "+todaySale.length);
+        callback(null, todaySale);
+    } else {
+        logger.error("Error getting todaySale "+todaySale);
+        callback([], null);
+    }
+}
+

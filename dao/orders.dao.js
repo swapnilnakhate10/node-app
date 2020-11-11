@@ -7,7 +7,8 @@ module.exports = {
     insertOne : insertOne,
     findOne : findOne,
     find : find,
-    findOneAndUpdate : findOneAndUpdate
+    findOneAndUpdate : findOneAndUpdate,
+    aggregate : aggregate
 };
 
 async function insertOne(orderDetails) {
@@ -35,6 +36,13 @@ async function findOneAndUpdate(query, updateData) {
 
 async function find(query) {
     let orderList = await OrdersModel.find(query).catch((err) => {
+        return err;
+    });
+    return orderList;
+}
+
+async function aggregate(pipeline) {
+    let orderList = await OrdersModel.aggregate(pipeline).catch((err) => {
         return err;
     });
     return orderList;
