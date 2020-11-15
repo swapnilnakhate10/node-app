@@ -8,7 +8,8 @@ module.exports = {
     addUpdateOrder : addUpdateOrder,
     getOrdersOfTable : getOrdersOfTable,
     submitTableBill : submitTableBill,
-    getTodaysOrders : getTodaysOrders
+    getTodaysOrders : getTodaysOrders,
+    getDatewiseOrders : getDatewiseOrders
 };
 
 function addUpdateOrder(req, res) {
@@ -62,6 +63,20 @@ function getTodaysOrders(req, res) {
       res.status(500).send(err);
     } else {
       logger.debug("Success getTodaysOrders ");
+      res.status(200).send(result);
+    }
+  });
+}
+
+function getDatewiseOrders(req, res) {
+  logger.debug("Inside get Datewise Orders");
+  let date = req.body.date;
+  ordersService.getDatewiseOrders(date, (err, result) => {
+    if(err) {
+      logger.error("Get getDatewiseOrders : "+err);
+      res.status(500).send(err);
+    } else {
+      logger.debug("Success getDatewiseOrders");
       res.status(200).send(result);
     }
   });

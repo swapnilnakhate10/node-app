@@ -9,7 +9,8 @@ module.exports = {
     addUpdateOrder : addUpdateOrder,
     getOrdersOfTable : getOrdersOfTable,
     submitTableBill : submitTableBill,
-    getTodaysOrders : getTodaysOrders
+    getTodaysOrders : getTodaysOrders,
+    getDatewiseOrders : getDatewiseOrders
 };
 
 async function addUpdateOrder(orderDetails, callback) {
@@ -82,11 +83,29 @@ async function getTodaysOrders(callback) {
     logger.debug("todaySaleQuery : ");
     logger.debug(todaySaleQuery);
     let todaySale = await ordersDao.find(todaySaleQuery);
-    if(todaySale && todaySale.length > 0) {
+    if(todaySale && todaySale.length >= 0) {
         logger.debug("todaySale : "+todaySale.length);
         callback(null, todaySale);
     } else {
         logger.error("Error getting todaySale "+todaySale);
+        callback([], null);
+    }
+}
+
+async function getDatewiseOrders(date, callback) {
+    let currentDate = new Date(date);
+    let startDate = currentDate.toLocaleDateString();
+    currentDate.setDate(currentDate.getDate() + 1);
+    let endDate = currentDate.toLocaleDateString();
+    console.log('startDate : '+startDate);
+    console.log('endDate : '+endDate);
+    let datewiseSaleQuery = { "updatedAt" : {$gte: startDate , $lt: endDate } };
+    let datewiseSale = await ordersDao.find(datewiseSaleQuery);
+    if(datewiseSale && datewiseSale.length >= 0) {
+        logger.debug("datewiseSale : "+datewiseSale.length);
+        callback(null, datewiseSale);
+    } else {
+        logger.error("Error getting datewiseSale "+datewiseSale);
         callback([], null);
     }
 }

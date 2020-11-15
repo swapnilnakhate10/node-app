@@ -36,6 +36,8 @@ router.post('/', ordersController.addUpdateOrder);
 
 router.get('/today', ordersController.getTodaysOrders);
 
+router.post('/datewise', ordersController.getDatewiseOrders);
+
 router.get('/:tableId', ordersController.getOrdersOfTable);
 
 router.put('/:tableId', ordersController.submitTableBill);
