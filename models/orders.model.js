@@ -24,6 +24,6 @@ const userSchema = new Schema({
         type : String,
         default : "NA"
     }
-}, { timestamps: true });
+}, { timestamps: true, versionKey: false });
 
 module.exports = mongoose.model('Order', userSchema);
