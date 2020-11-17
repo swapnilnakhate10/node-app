@@ -130,7 +130,7 @@ async function getAllTables(callback) {
 function mergeArrayObjects(a1, a2){
     a1.map(element => {
         const tableMatched = a2.find((item) => (item.tableNumber === element.tableNumber));
-        if(tableMatched && tableMatched._id) {
+        if(tableMatched) {
             element.status = tableMatched.status;
         }
     });
