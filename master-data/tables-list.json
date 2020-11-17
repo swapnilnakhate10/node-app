@@ -1,0 +1,43 @@
+[
+    {
+        "tableNumber" : 1,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 2,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 3,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 4,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 5,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 6,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 7,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 8,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 9,
+        "status" : "Available"
+    },
+    {
+        "tableNumber" : 10,
+        "status" : "Available"
+    }
+    
+]

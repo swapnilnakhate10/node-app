@@ -8,7 +8,8 @@ module.exports = {
     findOne : findOne,
     find : find,
     findOneAndUpdate : findOneAndUpdate,
-    aggregate : aggregate
+    aggregate : aggregate,
+    findWithPopulate : findWithPopulate
 };
 
 async function insertOne(orderDetails) {
@@ -36,6 +37,13 @@ async function findOneAndUpdate(query, updateData) {
 
 async function find(query) {
     let orderList = await OrdersModel.find(query).catch((err) => {
+        return err;
+    });
+    return orderList;
+}
+
+async function findWithPopulate(query, fields) {
+    let orderList = await OrdersModel.find(query, fields).lean().catch((err) => {
         return err;
     });
     return orderList;

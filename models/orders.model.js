@@ -18,7 +18,7 @@ const userSchema = new Schema({
     },
     status : {
         type : String,
-        default : "Available"
+        default : "Occupied"
     },
     paymentMode : {
         type : String,

@@ -9,7 +9,8 @@ module.exports = {
     getOrdersOfTable : getOrdersOfTable,
     submitTableBill : submitTableBill,
     getTodaysOrders : getTodaysOrders,
-    getDatewiseOrders : getDatewiseOrders
+    getDatewiseOrders : getDatewiseOrders,
+    getAllTables : getAllTables
 };
 
 function addUpdateOrder(req, res) {
@@ -77,6 +78,19 @@ function getDatewiseOrders(req, res) {
       res.status(500).send(err);
     } else {
       logger.debug("Success getDatewiseOrders");
+      res.status(200).send(result);
+    }
+  });
+}
+
+function getAllTables(req, res) {
+  logger.debug("Inside get All Tables");
+  ordersService.getAllTables((err, result) => {
+    if(err) {
+      logger.error("Get All Tables : "+err);
+      res.status(500).send(err);
+    } else {
+      logger.debug("Success All Tables");
       res.status(200).send(result);
     }
   });

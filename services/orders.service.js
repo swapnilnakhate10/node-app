@@ -4,13 +4,15 @@ let log4js = require("log4js");
 let ordersDao = require('../dao/orders.dao');
 const logger = log4js.getLogger("Orders Service");
 logger.debug("Order Service Initiated");
+let tableList = require('./../master-data/tables-list.json');
 
 module.exports = {
     addUpdateOrder : addUpdateOrder,
     getOrdersOfTable : getOrdersOfTable,
     submitTableBill : submitTableBill,
     getTodaysOrders : getTodaysOrders,
-    getDatewiseOrders : getDatewiseOrders
+    getDatewiseOrders : getDatewiseOrders,
+    getAllTables : getAllTables
 };
 
 async function addUpdateOrder(orderDetails, callback) {
@@ -110,3 +112,28 @@ async function getDatewiseOrders(date, callback) {
     }
 }
 
+async function getAllTables(callback) {
+    logger.debug("inside get allTables");
+    let allTablesQuery = { "status" : "Occupied" };
+    let populateFields = { "status" : 1, "tableNumber" : 1};
+    let availableTables = await ordersDao.findWithPopulate(allTablesQuery, populateFields);
+    if(availableTables && availableTables.length >= 0) {
+        let allTables = mergeArrayObjects(tableList, availableTables)
+        logger.debug("allTables : "+availableTables.length);
+        callback(null, allTables);
+    } else {
+        logger.error("Error getting availableTables "+datewiseSale);
+        callback([], null);
+    }
+}
+
+function mergeArrayObjects(a1, a2){
+    a1.map(element => {
+        const tableMatched = a2.find((item) => (item.tableNumber === element.tableNumber));
+        if(tableMatched && tableMatched._id) {
+            element.status = tableMatched.status;
+        }
+    });
+    return a1;
+}
+  
