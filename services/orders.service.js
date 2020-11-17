@@ -119,19 +119,22 @@ async function getAllTables(callback) {
     let availableTables = await ordersDao.findWithPopulate(allTablesQuery, populateFields);
     if(availableTables && availableTables.length >= 0) {
         let allTables = mergeArrayObjects(tableList, availableTables)
-        logger.debug("allTables : "+availableTables.length);
+        logger.debug("availableTables : "+availableTables.length);
         callback(null, allTables);
     } else {
-        logger.error("Error getting availableTables "+datewiseSale);
+        logger.error("Error getting availableTables ");
+        logger.error(availableTables);
         callback([], null);
     }
 }
 
 function mergeArrayObjects(a1, a2){
     a1.map(element => {
-        const tableMatched = a2.find((item) => (item.tableNumber === element.tableNumber));
+        const tableMatched = a2.find((item) => (item.tableNumber == element.tableNumber));
         if(tableMatched) {
             element.status = tableMatched.status;
+        }else {
+            element.status = "Available";
         }
     });
     return a1;
