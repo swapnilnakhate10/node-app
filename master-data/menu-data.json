@@ -121,19 +121,13 @@
 			},
 			{
 				"menuId": "1017",
-				"menu": "Black Current ",
+				"menu": "Black Current",
 				"price": 80,
 				"quantity": 1
 			},
 			{
 				"menuId": "1018",
 				"menu": "Blueberry",
-				"price": 80,
-				"quantity": 1
-			},
-			{
-				"menuId": "1019",
-				"menu": "Strawberry",
 				"price": 80,
 				"quantity": 1
 			},
