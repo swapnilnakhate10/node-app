@@ -984,6 +984,47 @@
 			}
 		]
 	},
+ {
+		"categoryId": "50018",
+		"category": "Momos",
+		"menus": [{
+				"menuId": "1065",
+				"menu": "Veggie",
+				"price": 80,
+				"quantity": 1
+			},
+			{
+				"menuId": "1066",
+				"menu": "Cheezee",
+				"price": 100,
+				"quantity": 1
+			},
+			{
+				"menuId": "1066",
+				"menu": "Paneer",
+				"price": 100,
+				"quantity": 1
+			},
+			{
+				"menuId": "1067",
+				"menu": "Cheeze Paneer",
+				"price": 120,
+				"quantity": 1
+			},
+			{
+				"menuId": "1068",
+				"menu": "Tandoori",
+				"price": 120,
+				"quantity": 1
+			},
+			{
+				"menuId": "1069",
+				"menu": "Special",
+				"price": 140,
+				"quantity": 1
+			}
+		]
+	},
 	{
 		"categoryId": "50017",
 		"category": "Other",
