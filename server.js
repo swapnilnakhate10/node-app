@@ -18,7 +18,7 @@ log4js.configure({
   categories: { default: { appenders: ["bt"], level: config.get('logger.level') } }
 });
 
-let port = config.get('serverPort');
+const port = process.env.PORT || 8080;
 
 app.use(compression({filter: shouldCompress}))
 
