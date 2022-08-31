@@ -63,7 +63,7 @@ dbConnect.on('error', (error) => {
 });
 
 http.createServer(app).listen(port, function (err) {
-  logger.debug("Server File Initiated");
+  logger.debug("Server File Initiated for ENV ",process.env.NODE_ENV);
   console.log('Listening on http://localhost:' + port);
 });
   
