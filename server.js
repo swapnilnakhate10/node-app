@@ -55,27 +55,22 @@ mongoose.connect(connectionString, {
 let dbConnect = mongoose.connection;
 
 dbConnect.on('connected', () => {
-  logger.debug("Database Connected to "+connectionString);
+  logger.debug("Database Connected to ",connectionString);
 });
 //Bind connection to error event (to get notification of connection errors)
 dbConnect.on('error', (error) => {
-  logger.error("Error Database connection");
-  logger.error(error);
+  logger.error("Error Database connection due to : ",error);
 });
 
 http.createServer(app).listen(port, function (err) {
   logger.debug("Server File Initiated");
-  console.log('listening on http://localhost:' + port);
+  console.log('Listening on http://localhost:' + port);
 });
   
 
 process.on('unhandledRejection', (reason, p) => {
-    logger.error('Unhandled Rejection at Reason : ');
-    logger.error(reason);
-    logger.error('Unhandled Rejection for Promise : ');
-    logger.error(p);
+    logger.error('Unhandled Rejection, Reason : ',reason);
+    logger.error('Unhandled Rejection for Promise is : ',p);
   }).on('uncaughtException', (err) => {
-    logger.error('Uncaught Exception thrown : ');
-    logger.error(err);
-    process.exit(1);
+    logger.error('Uncaught Exception thrown : ',err);
 });
