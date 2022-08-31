@@ -3,7 +3,7 @@
     "mongoDb" : {
         "port" : 27017,
         "dbname" : "TheBakersTreat",
-        "connectionString" : "mongodb://localhost:27017/TheBakersTreat"
+        "connectionString" : "mongodb+srv://admin:admin@bakerstreat.agt29.mongodb.net/BakersTreat"
     },
     "logger" : {
         "type" : "console",
