@@ -14,7 +14,7 @@ const logger = log4js.getLogger("Server");
 let fileName = "logs/"+ new Date().toDateString() +"_bt_logs.log";
 
 log4js.configure({
-  appenders: { fandango: { type: config.get('logger.type'), filename: fileName } },
+  appenders: { bt: { type: config.get('logger.type'), filename: fileName } },
   categories: { default: { appenders: ["bt"], level: config.get('logger.level') } }
 });
 
